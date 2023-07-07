@@ -36,7 +36,7 @@ solidity ^0.8.0
    The total token supply is increased by _value.
    The Transfer event is emitted with address(0) as the from parameter, indicating that the tokens are minted into existence.
 
-##needs
+## needs
 make sure u created a locally hardhat network
 
 ## usage
