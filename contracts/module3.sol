@@ -25,6 +25,7 @@ contract MyToken {
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
         emit Transfer(msg.sender, _to, _value);
+
     }
     function burn(uint256 _value) public {
         balanceOf[msg.sender] -= _value;
