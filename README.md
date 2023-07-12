@@ -42,5 +42,3 @@ make sure u created a locally hardhat network
 ## usage
 Make sure you have Solidity ^0.8.0 installed. Compile and deploy the MyToken contract to a supported local hardhat network. Interact with the deployed contract by calling the available functions and providing the required parameters.
 
-## Video Walkthrough
-https://www.loom.com/share/ca736a1cc7b74879b6d9983404bef780?sid=c458c088-ac72-4c23-a796-1c7e00bdde3c
