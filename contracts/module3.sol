@@ -20,7 +20,10 @@ contract MyToken {
         totalSupply = _initialSupply * 10**uint256(_decimals);
         balanceOf[msg.sender] = totalSupply;
     }
-
+    function mint(address _to, uint256 _value) public onlyOwner{
+        balanceOf[_to] += _value;
+        totalSupply += _value;
+    }
     function transfer(address _to, uint256 _value) public {
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
@@ -31,10 +34,5 @@ contract MyToken {
         balanceOf[msg.sender] -= _value;
         totalSupply -= _value;
         emit Burn(msg.sender, _value);
-    }
-    function mint(address _to, uint256 _value) public{
-        balanceOf[_to] += _value;
-        totalSupply += _value;
-        emit Transfer(address(0), _to, _value);
     }
 }
